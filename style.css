@@ -1,0 +1,46 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
+  main{
+      width: 100vw;
+  }
+
+  .carouselContainer{
+      margin-top: 10px;
+      margin-left: 10px;
+      border: 1px solid black;
+      width: 500px;
+      height: 500px;
+      max-width: 1000px;
+      max-height: 1000px;
+      min-height: 500px;
+      position: relative;
+  }
+
+  .arrowsWrapper{
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+      position: absolute;
+      top: 0;
+  }
+
+  .imgSlide{
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+  }
+
+  .imgSlideNone{
+      display: none;
+  }
+  
+  .imageContainer{
+      width: 100%;
+      height: 100%;
+  }
