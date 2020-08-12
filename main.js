@@ -91,3 +91,10 @@ rightArrow.addEventListener("click", () => {
 console.log(currentSlideIndex);
 console.log(slideList);
 console.log(slideList[currentSlideIndex]);
+
+// Changes every 5 seconds
+window.setInterval(function(){
+  setCurrentSlide(1);
+  renderCurrentSlide(currentSlideIndex);
+  renderCurrentCircle(currentSlideIndex);
+}, 7000);
