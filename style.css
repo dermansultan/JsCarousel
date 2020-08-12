@@ -9,9 +9,11 @@
   }
 
   .carouselContainer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-top: 10px;
       margin-left: 10px;
-      border: 1px solid black;
       width: 500px;
       height: 500px;
       max-width: 1000px;
@@ -20,14 +22,26 @@
       position: relative;
   }
 
+  #leftArrow, #rightArrow{
+      height: 40px;
+      width: 40px;
+      border-radius: 50px;
+      border: none;
+      background-color: transparent;
+  }
+
   .arrowsWrapper{
-      position: relative;
       display: flex;
-      width: 100%;
+      width: 95%;
       height: 100%;
+      align-items: center;
       justify-content: space-between;
       position: absolute;
-      top: 0;
+  }
+
+  .fa-arrow-circle-left, .fa-arrow-circle-right{
+    font-size: 40px;
+    color: white;
   }
 
   .imgSlide{
@@ -44,4 +58,24 @@
   .imageContainer{
       width: 100%;
       height: 100%;
+  }
+
+  .fa-circle{
+    color:white;
+    font-size: 25px;
+  }
+
+  .circleBtn{
+    border: none;
+    background-color: transparent;
+  }
+
+  #circlesContainer{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: space-around;
+    position: absolute;
+    margin-bottom: 60px;
   }
